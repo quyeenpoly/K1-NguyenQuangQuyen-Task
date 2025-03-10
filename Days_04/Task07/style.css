@@ -7,7 +7,7 @@
 }
 
 .container {
-  width: 1512px;
+  max-width: 1512px;
   padding: 50px;
   margin: 0 auto;
   background-color: #e9e7e4;
@@ -236,4 +236,23 @@ ul li a {
   height: 5px; /* Độ dày của gạch chân */
   background-color: blue;
   opacity: 0.5;
+}
+
+ul li a {
+  position: relative;
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  opacity: 0.5;
+  transition: all ease-in-out 0.5s;
+}
+ul li a:hover::after {
+  width: 100%;
+  transform: scale(1, 1);
 }
