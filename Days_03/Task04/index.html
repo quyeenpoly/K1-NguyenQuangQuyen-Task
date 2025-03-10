@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 04</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="nav-menu">
-        <h1>User</h1>
-        <div class="content">
-          <input class="input" type="text" placeholder="Search users" />
+      <h1>User</h1>
+      <div class="content">
+        <div class="search">
+          <input class="input-text" type="text" placeholder="Search users..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="menu">
           <ul>
             <li><a href="#">Reputation</a></li>
             <li><a href="#">New users</a></li>
@@ -21,68 +34,84 @@
           </ul>
         </div>
       </div>
-      <div class="user-personal">
-        <div class="card">
-          <div class="user-detail">
-            <div class="user-img">
-              <img src="imgs/1.png" alt="" width="97px" />
-            </div>
+      <section class="user-list">
+        <div class="user-list-p">
+          <div class="user-item">
+            <img src="./imgs/1.png" alt="" />
             <div class="user-content">
               <h2>Lelah Nichols</h2>
-              <span>Troy, MI</span>
-              <div>
-                <button>clothes</button>
-                <button>stem</button>
-              </div>
+              <p class="user-address">Troy, MI</p>
+              <p class="tags">
+                <span>clothers</span>
+                <span>stem</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="user-item">
+            <img src="./imgs/2.png" alt="" />
+            <div class="user-content">
+              <h2>Jesus Weiss</h2>
+              <p class="user-address">Fort Worth, TX</p>
+              <p class="tags">
+                <span>headset</span>
+                <span>gadget</span>
+                <span>speed</span>
+                <span>winter</span>
+              </p>
+            </div>
+          </div>
+          <div class="user-item">
+            <img src="./imgs/3.png" alt="" />
+            <div class="user-content">
+              <h2>Annie Rice</h2>
+              <p class="user-address">Austin, TX</p>
+              <p class="tags">
+                <span>road</span>
+                <span>mountain</span>
+                <span>trip</span>
+                <span>earth</span>
+                <span>nature</span>
+              </p>
+            </div>
+          </div>
+          <div class="user-item">
+            <img src="./imgs/1.png" alt="" />
+            <div class="user-content">
+              <h2>Robert Brower</h2>
+              <p class="user-address">Cincinnati, OH</p>
+              <p class="tags">
+                <span>Maintenance</span>
+                <span>gears</span>
+                <span>frames</span>
+                <span>repair</span>
+              </p>
+            </div>
+          </div>
+          <div class="user-item">
+            <img src="./imgs/5.png" alt="" />
+            <div class="user-content">
+              <h2>Amy Campbell</h2>
+              <p class="user-address">Warrior, AL</p>
+              <p class="tags">
+                <span>music</span>
+                <span>disks</span>
+              </p>
+            </div>
+          </div>
+          <div class="user-item">
+            <img src="./imgs/6.png" alt="" />
+            <div class="user-content">
+              <h2>Anthony S. Morin</h2>
+              <p class="user-address">Lyndhurst, NJ</p>
+              <p class="tags">
+                <span>vintage</span>
+                <span>electric</span>
+              </p>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="user-detail">
-            <div class="user-img">
-              <img src="imgs/1.png" alt="" width="97px" />
-            </div>
-            <div class="user-content">
-              <h2>Lelah Nichols</h2>
-              <span>Troy, MI</span>
-              <div>
-                <button>clothes</button>
-                <button>stem</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="user-detail">
-            <div class="user-img">
-              <img src="imgs/1.png" alt="" width="97px" />
-            </div>
-            <div class="user-content">
-              <h2>Lelah Nichols</h2>
-              <span>Troy, MI</span>
-              <div>
-                <button>clothes</button>
-                <button>stem</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="user-detail">
-            <div class="user-img">
-              <img src="imgs/1.png" alt="" width="97px" />
-            </div>
-            <div class="user-content">
-              <h2>Lelah Nichols</h2>
-              <span>Troy, MI</span>
-              <div>
-                <button>clothes</button>
-                <button>stem</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>
